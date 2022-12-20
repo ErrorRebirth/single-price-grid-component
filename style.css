@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla';
+}
+
+:root {
+    --padding: 30px;
+}
+
+body {
+    background-color: #e5eff5;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 600px;
+    height: 450px;
+    background-color: whitesmoke;
+    box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#top-section {
+    height: 45%;
+    padding: var(--padding);
+}
+
+#top-section h2 {
+    color: #2ab2af;
+}
+
+#top-section h4 {
+    color: #c0df34;
+    margin: 20px 0 10px 0;
+}
+
+#top-section p {
+    color: #98a6bd;
+    line-height: 25px;
+}
+
+#bottom-section {
+    height: 55%;
+    display: flex;
+}
+
+#bottom-left {
+    flex: 50%;
+    padding: var(--padding);
+    background-color: #2ab2af;
+    color: #e5eff5;
+}
+
+#price {
+    margin: 10px 0 10px 0;
+}
+
+#price h1 {
+    display: inline-block;
+    font-size: 2em;
+}
+
+#price p {
+    display: inline-block;
+    margin-left: 5px;
+    color: #cfd1d0;
+    font-weight: 400;
+}
+
+button {
+    margin-top: 35px;
+    width: 98%;
+    height: 27%;
+    background-color: #c0df34;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.05em;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.24);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #081F2D;
+    transition: 500ms;
+}
+
+#bottom-right {
+    flex: 50%;
+    padding: var(--padding);
+    background-color: #30ccc9;
+    color: #e5eff5;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    line-height: 20px;
+    color: #f1f1f1;
+}
