@@ -38,7 +38,6 @@ main {
 #top-section h2 {
     color: #c0df34;
     margin: 20px 0 10px 0;
-    font-size: 1rem;
 }
 
 #top-section p {
@@ -69,6 +68,10 @@ main {
     margin-left: 5px;
     color: #cfd1d0;
     font-weight: 400;
+}
+
+.sub-heading {
+    font-size: 1rem;
 }
 
 button {
