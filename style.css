@@ -18,6 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 
 section {
@@ -53,13 +54,11 @@ section {
 #bottom-section {
     height: 55%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #bottom-left {
-    flex: 50%;
-    padding: var(--padding);
     background-color: #2ab2af;
-    color: #e5eff5;
 }
 
 #price {
@@ -100,9 +99,12 @@ button:hover {
 }
 
 #bottom-right {
-    flex: 50%;
-    padding: var(--padding);
     background-color: #30ccc9;
+}
+
+#bottom-left, #bottom-right {
+    width: 50%;
+    padding: var(--padding);
     color: #e5eff5;
 }
 
@@ -117,12 +119,15 @@ li {
 }
 
 @media screen and (max-width: 620px) {
-    section {
-        height: auto;
-        width: 70vw;
-    }
 
-    #bottom-section {
-        flex-direction: column;
+    section, #bottom-left, #bottom-right {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #top-section, #bottom-left, #bottom-right {
+        padding: 10px;
     }
 }
