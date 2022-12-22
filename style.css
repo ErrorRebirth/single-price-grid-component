@@ -29,19 +29,20 @@ body {
     --bright-yellow: #c0df34;
     --light-gray: #e5eff5;
     --grayish-blue: #98a6bd;
+    --white: #FFFFFF;
 
     /* Padding */
     --section-padding: 1.25em;
 }
 
 body {
-    background-color: #e5eff5;
+    background-color: var(--white);
     padding: 1.25em;
 }
 
 .main-container {
     width: 100%;
-    background-color: white;
+    background-color: var();
     box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.26);
     -webkit-box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.26);
     -moz-box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.26);
@@ -54,19 +55,19 @@ body {
 }
 
 .top-section h1 {
-    color: #2ab2af;
+    color: var(--cyan);
     font-size: 1.5rem;
 }
 
 .top-section .risk-free-trial {
-    color: #c0df34;
+    color: var(--bright-yellow);
     font-size: 1.15rem;
     font-weight: 700;
     margin: 1.25em 0 0.3125em 0;
 }
 
 .top-section p {
-    color: #98a6bd;
+    color: var(--grayish-blue);
 }
 
 .bottom-section {
